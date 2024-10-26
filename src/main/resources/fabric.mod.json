@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "natures-life",
+	"version": "${version}",
+	"name": "Nature's Life",
+	"description": "Enhance your standard Vanilla gameplay!",
+	"authors": [
+		"watakak"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/watakak/natures-life"
+	},
+	"license": "MIT",
+	"icon": "assets/natures-life/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.watakak.NaturesLife"
+		],
+		"client": [
+			"net.watakak.NaturesLifeClient"
+		],
+		"fabric-datagen": [
+			"net.watakak.NaturesLifeDataGenerator"
+		]
+	},
+	"mixins": [
+		"natures-life.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
